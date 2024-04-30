@@ -1,13 +1,46 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FloatLabelComponent } from './float-label/float-label.component';
+import { UsersComponent } from './users/users.component';
+import { PriceComponent } from './price/price.component';
+import { SuccessComponent } from './success/success.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { WebsitesComponent } from './websites/websites.component';
+import { PrComponent } from './pr/pr.component';
+import { NewDealComponent } from './new-deal/new-deal.component';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common'; // Import CommonModule
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    FloatLabelComponent,
+    UsersComponent,
+    PriceComponent,
+    SuccessComponent,
+    DropdownComponent,
+    WebsitesComponent,
+    PrComponent,
+    NewDealComponent,
+    BrowserModule,
+    CommonModule,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'AngularTest';
+  courses: string[] = ['java', 'python', 'web3', 'blockchain'];
+  course!: string;
+
+  onAdd() {
+    this.courses.push('angular');
+  }
+
+  onRemove(course: string) {
+    let index = this.courses.indexOf(course);
+    this.courses.splice(index, 1);
+  }
 }

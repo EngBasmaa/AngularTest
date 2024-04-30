@@ -1,0 +1,24 @@
+* {
+  background-color: aliceblue;
+}
+
+.boox,
+.center {
+  background-color: rgba(239, 239, 239, 0.3);
+  justify-content: center;
+  text-align: center;
+  color: grey;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.boox {
+  width: 50%;
+}
+
+div {
+  width: 100%;
+  border: none;
+  justify-content: center;
+  text-align: center;
+}

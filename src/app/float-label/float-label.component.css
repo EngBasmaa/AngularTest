@@ -1,0 +1,8 @@
+input {
+  width: 30rem !important;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: larger;
+}

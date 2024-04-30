@@ -1,0 +1,40 @@
+<p-dropdown
+  [options]="users"
+  [(ngModel)]="selectedUser"
+  optionLabel="name"
+  [filter]="true"
+  filterBy="name"
+  placeholder="اختر المنصة"
+>
+  <ng-template pTemplate="selectedItem">
+    <div class="user-item user-item-value" *ngIf="selectedUser">
+      <div>
+        <img [src]="selectedUser.image" alt="User Image" class="user-image" />
+      </div>
+      <div>{{ selectedUser.name }}</div>
+    </div>
+  </ng-template>
+  <ng-template let-user pTemplate="item">
+    <div class="user-item">
+      <img [src]="user.image" alt="User Image" class="user-image" />
+      <div>{{ user.name }}</div>
+      <small>{{ user.phone }}</small>
+    </div>
+  </ng-template>
+</p-dropdown>
+
+<ng-template pTemplate="selectedItem">
+  <div class="user-item user-item-value" *ngIf="selectedUser">
+    <div>
+      <img [src]="selectedUser.image" alt="User Image" class="user-image" />
+    </div>
+    <div>{{ selectedUser.name }}</div>
+  </div>
+</ng-template>
+<ng-template let-user pTemplate="item">
+  <div class="user-item">
+    <img [src]="user.image" alt="User Image" class="user-image" />
+    <div>{{ user.name }}</div>
+    <small>{{ user.phone }}</small>
+  </div>
+</ng-template>

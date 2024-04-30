@@ -1,0 +1,20 @@
+.progressed,
+.progress-bar {
+  border: 2px solid rgb(154, 152, 152);
+  width: 32rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+}
+
+.progress-bar {
+  width: 50%;
+  height: 1.5rem;
+  background-color: rgb(25, 101, 244);
+}
+
+p {
+  word-spacing: 1.7rem;
+  margin-top: 0.5rem;
+  color: grey;
+  font-size: smaller;
+}

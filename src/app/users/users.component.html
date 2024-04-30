@@ -1,0 +1,22 @@
+<p-dropdown
+  [options]="users"
+  [(ngModel)]="selectedUser"
+  optionLabel="name"
+  [filter]="true"
+  filterBy="name"
+  filterBy="phone"
+  placeholder="ابحث عن عميل :مثال اسم العميل أو رقم التليفون "
+>
+  <ng-template pTemplate="selectedItem">
+    <div class="user-item user-item-value" *ngIf="selectedUser">
+      <div>{{ selectedUser.name }}</div>
+    </div>
+  </ng-template>
+  <ng-template let-user pTemplate="item">
+    <div class="user-item">
+      <div>{{ user.name }}</div>
+      <small>{{ user.phone }}</small>
+    </div>
+  </ng-template>
+</p-dropdown>
+<i class="pi pi-search"></i>

@@ -1,0 +1,16 @@
+:host ::ng-deep .p-dropdown {
+  width: 22rem;
+}
+
+* {
+  line-height: 1.5rem;
+  background-color: aliceblue;
+  padding: 0 1rem;
+  color: grey;
+  font-size: 1rem;
+}
+
+.pi-search {
+  color: blue;
+  font-weight: 700;
+}

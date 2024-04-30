@@ -1,0 +1,22 @@
+* {
+  line-height: 1.5rem;
+  background-color: aliceblue;
+  padding: 0 1rem;
+  color: grey;
+}
+.pi-search {
+  color: blue;
+  font-weight: 700;
+}
+
+.user-item {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.user-image {
+  width: 2rem !important; /* Adjusted width with !important */
+  height: 2rem !important;
+  padding: 0;
+  border-radius: 50%;
+}
