@@ -8,10 +8,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import { WebsitesComponent } from './websites/websites.component';
 import { PrComponent } from './pr/pr.component';
 import { NewDealComponent } from './new-deal/new-deal.component';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common'; // Import CommonModule
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -25,18 +22,19 @@ import { CommonModule } from '@angular/common'; // Import CommonModule
     WebsitesComponent,
     PrComponent,
     NewDealComponent,
-    BrowserModule,
     CommonModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+  title = 'AngularTest';
+
   courses: string[] = ['java', 'python', 'web3', 'blockchain'];
   course!: string;
 
   onAdd() {
-    this.courses.push('angular');
+    this.courses.push('صفقة جديدة');
   }
 
   onRemove(course: string) {

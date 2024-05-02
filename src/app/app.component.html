@@ -23,25 +23,26 @@
           <p>يرجى البحث عن العميل لاختياره</p>
         </div>
       </div>
+
       <div class="list">
         <app-users></app-users>
       </div>
     </div>
-    <div class="dealPrice box two main">
-      <div class="top">
-        <img
-          class="image"
-          src="../assets/images/pixelcut-export (1).png"
-          alt="deal price"
-        />
+  </div>
+  <div class="dealPrice box two main">
+    <div class="top">
+      <img
+        class="image"
+        src="../assets/images/pixelcut-export (1).png"
+        alt="deal price"
+      />
 
-        <div class="select">
-          <h3>سعر الصفقة</h3>
-          <p>سعر الصفقة هو المبلغ المدفوع شامل الضريبة</p>
-        </div>
+      <div class="select">
+        <h3>سعر الصفقة</h3>
+        <p>سعر الصفقة هو المبلغ المدفوع شامل الضريبة</p>
       </div>
-      <app-price class="pr"></app-price>
     </div>
+    <app-price class="pr"></app-price>
   </div>
 
   <div class="propability">
@@ -56,48 +57,58 @@
   <div class="dealDetails">
     <div class="responsible box three main">
       <h3 class="t">مسئول الصفقة</h3>
+
       <div class="group">
         <app-dropdown class="special"></app-dropdown>
       </div>
-      <i class="pi pi-user-plus" style="color: 'var(--primary-color)'"></i>
+
+      <i class="pi pi-user-plus"></i>
     </div>
+
     <div class="source box three main">
       <h3 class="t">المصدر</h3>
+
       <div class="group">
         <app-websites class="special"></app-websites>
       </div>
     </div>
+
     <div class="project box three main">
       <h3 class="t">المشروع</h3>
+
       <div class="group">
         <app-pr class="special"></app-pr>
       </div>
     </div>
   </div>
+
   <div class="marks main">
     <h3>العلامات</h3>
-    <div>
+
+    <div class="signs">
       <button type="button" (click)="onAdd()">Add</button>
       <ul>
         <li *ngFor="let course of courses">
-          <button type="button" (click)="onRemove(course)">remove</button>
-          {{ course }}
+          <button type="submit">{{ course }}</button>
         </li>
       </ul>
-      <app-new-deal></app-new-deal>
+      <!-- <app-new-deal></app-new-deal> -->
     </div>
-    <div class="group">
-      <div class="btn"></div>
-      <div class="btn"></div>
-      <div class="btn"></div>
-      <div class="btn"></div>
-      <div class="btn"></div>
-    </div>
+  </div>
+
+  <div class="group">
+    <div class="btn"></div>
+    <div class="btn"></div>
+    <div class="btn"></div>
+    <div class="btn"></div>
+    <div class="btn"></div>
   </div>
 
   <div class="products main">
     <h3>المنتجات</h3>
+
     <hr />
+
     <div class="g"></div>
   </div>
 
@@ -105,13 +116,5 @@
 
   <div class="sign main">hello</div>
 </main>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <router-outlet />

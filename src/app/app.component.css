@@ -192,3 +192,17 @@ div .propability {
   font-size: x-large;
   margin-right: 1.5rem;
 }
+
+.marks,
+.signs ul li {
+  display: flex;
+}
+
+.marks .signs ul {
+  list-style: none;
+  margin: 1rem;
+  display: flex;
+  color: red;
+  gap: 1rem;
+  padding: 0.5rem;
+}

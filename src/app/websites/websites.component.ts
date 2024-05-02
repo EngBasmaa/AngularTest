@@ -3,7 +3,6 @@ import { SelectItem } from 'primeng/api';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common'; // Import CommonModule
-
 interface User {
   name: string;
   image: string; // Add this line to include the image property
